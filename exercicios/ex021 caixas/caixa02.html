@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font: normal normal 16px Arial; /*style weight size family*/
+            background-color: rgb(161, 161, 157);
+        }
+
+        header {
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: 15px;
+        }
+
+        nav {
+            background-color: rgba(128, 128, 128, 0.438);
+            padding: 3px;
+            box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.158); /*sempre fazer isso ao criar sombras*/
+        }
+
+        nav > a {
+            text-align: left;
+            text-decoration: none;
+            color: white;
+            margin-right: 30px; /* criar espaço entre os elementos da propriedade, assim, os "links" ficam mais separados*/
+        }
+
+        nav > a:hover {
+            background-color: rgb(205, 50, 50);
+
+        }
+        main {
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: auto;
+            border-radius: 10px 0px; /* pra arredondar as quinas da caixa */
+        }
+
+        article {
+            background-color: rgb(214, 211, 206);
+            margin: 15px;
+            padding: 15px;
+        }
+
+        article > aside {
+            background-color: rgba(128, 128, 128, 0.801);
+            font: normal bold 12px sans-serif;
+        }
+
+        p {
+            text-indent: 30px; /*margem de começo de parágrafo*/
+        }
+        
+        footer {
+            background-color: rgb(0, 0, 0);
+            font-style: normal;
+            color: rgb(121, 119, 119);
+            text-align: center;
+            padding: 3px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header> <!--uma div, assim como main-->
+        <h1>Meu site</h1>
+        <nav> <!--navegação-->
+            <a href="#">[Link]</a>
+            <a href="#">[Link]</a>
+            <a href="#">[Link]</a>
+            <a href="#">[Link]</a>
+            <a href="#">[Link]</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Notícias</p>
+        </section>
+
+        <section id="noticias">
+            <article>
+                <h2>Notícias de outro tempo</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis dolores exercitationem reprehenderit neque velit ex animi dolor in, inventore, expedita doloribus soluta at cum, qui molestiae maxime aut quas iusto.</p>
+
+                <aside>
+                    <p>Artigo escrito por Alguém Louco</p>
+                </aside>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por mim.</p>
+    </footer>
+</body>
+</html>
