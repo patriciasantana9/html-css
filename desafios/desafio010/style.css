@@ -16,13 +16,12 @@
     --cor5: #063d1e;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
-
     --fonte-destaque: 'Bebas Neue', coursive;
     --fonte-android: 'Android', coursive; 
 
 }
 
-* { /*fizemos isso nas configurações globais para não ter problemas com margens e paddings pontuais, mas os que precisarem deles, serão configurados */
+* { /*fizemos isso nas configurações globais para não termos problemas com margens e paddings pontuais, mas os que precisarem deles, serão configurados */
 
     margin: 0px;
     padding: 0px;
